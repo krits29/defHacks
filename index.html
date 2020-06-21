@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Our Scioly</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             h1{
                 color: green;;
@@ -35,24 +37,39 @@
             }
             #mybuttons{
                 list-style: none;
-            }
-
-            a:link, a:visited{
                 text-decoration: none;
                 background-color: green;
                 border: 1px solid black;
                 color: black;
                 display: block;
-                width: 250px;
+                width: 150px;
                 text-align: center;
                 margin-bottom: 7px;
                 font-size: 25px;
-                border-radius: 15%;
+            }
+
+            #mybuttons:link, #mybuttons:visited{
+                background-color: goldenrod;
+                color: white;
             }
 
             a:hover, a:active{
-                background-color: goldenrod;
+                background-color: rgb(0, 75, 0);
                 color: white;
+            }
+
+            .navbar {
+            overflow: hidden;
+            background-color: #333; 
+            }
+
+            .navbar a {
+            float: left; /* Make sure that the links stay side-by-side */
+            display: block; /* Change the display to block, for responsive reasons (see below) */
+            color: white; /* White text color */
+            text-align: center; /* Center the text */
+            padding: 14px 20px; /* Add some padding */
+            text-decoration: none; /* Remove underline */
             }
 
         </style>
@@ -60,21 +77,28 @@
     <body>
         <header>
             RHS Scioly
-            <nav>Navigation - usually some sort of web urls and links</nav>
-            <ul id= "mybuttons">
-                <li>
-                    <a href= "https://washingtonscienceolympiad.com/" target = "_blank">WSO Page</a>
-                </li>
-                <li>
-                    <a href= "https://www.soinc.org/" target = "_blank">Soinc Site</a>
-                </li>
-                <li>
-                    <a href= "https://scioly.org/" target = "_blank">Scioly Site</a>
-                </li>
-            </ul>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Upcoming Events</a>
+                <a href="#">Teams</a>
+                <a href="#">Recent Scores</a>
+            </nav>
+            
         </header>
         <h1>RHS Scioly</h1>
         <h2>Welcome to RHS's Science Olympiad website</h2>
+
+        <ul id= "mybuttons">
+            <li>
+                <a href= "https://washingtonscienceolympiad.com/" target = "_blank">WSO Page</a>
+            </li>
+            <li>
+                <a href= "https://www.soinc.org/" target = "_blank">Soinc Site</a>
+            </li>
+            <li>
+                <a href= "https://scioly.org/" target = "_blank">Scioly Site</a>
+            </li>
+        </ul>
 
         <div>Blah</div>
         <span>blah</span>
